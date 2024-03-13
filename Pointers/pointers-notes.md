@@ -8,7 +8,7 @@
 
 # What is a pointer?
 Pointers are very simply, variables specially designated to “point” to the memory addresses of other variables. Let's illustrate this concept with a basic C++ example
-```
+```cpp
 #include <iostream>
 #include <string>
 
@@ -31,7 +31,7 @@ Name's memory address: 0x4a7c5ffa30
 Now if you were to run this example on your own computer, you probably won't get the same output for the memory address, and that's perfectly normal! The input will be different every single time that you run the code because the memory is simply getting assigned to a different spot in your RAM. 
 
 Now let's examine the syntax used within this example.
-```
+```cpp
 std::string* sample = &name;
 ```
 Right after the datatype to denotate that we want a pointer and not a normal variable we'll add a '*'. On the right hand side of the declaration statement, we'll put an '&' before the name of the variable to denotate that we want the memory address of the variable, not the actual value.
@@ -45,7 +45,7 @@ Both of these are useful depending on what we want to do in the code. If we need
 
 We can modify pointers very similarly to how we modify any other variable, but there are some strange side effects due to them storing the same memory address as another variable. Let's see this effect demonstrated through an example.
 
-```
+```cpp
 #include <iostream>
 #include <string>
 
@@ -74,7 +74,7 @@ name's new value: Rogers
 
 If you take a careful look at the output, you'll notice that when we change *sample's value, we actually change the value of the name as well. Why is this? It's because name and sample are pointing to the same memory value, so when we change one, the other will also change. It also works in the opposite direction, where when we change name, *sample's value also changes
 
-```
+```cpp
 #include <iostream>
 #include <string>
 
@@ -106,7 +106,7 @@ Pointers are mainly used to dynamically access and manipulate memory across a mu
 Pointers are used in a miriad of different scenarios, from making data structures like linked lists possible, to speeding up the efficiency of programs when used over normal variables. Let's take a look at a basic example of iterating through an array to showcase the usefulness of pointers. 
 
 Now in practically every language with for loops, you'll initialize a counter variable, setup a stopping point, and then setup how much your counter is going to increment each loop, like the example shown below
-```
+```cpp
 #include <iostream>
 
 int main()
@@ -120,7 +120,7 @@ int main()
 ```
 
 But when we use pointers, we can make our slightly faster. (Though in this example the speed difference is minute at best)
-```
+```cpp
 #include <iostream>
 
 int main()

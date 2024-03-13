@@ -11,7 +11,7 @@
 
 # Creating your first Project
 First, open up Unreal Engine, and navigate to the games tab
-[Alt Text](./Screenshot%202024-03-13%20134729)
+[Alt Text](https://github.com/C0LDRAM3N/cpp-notes-code/blob/main/unrealEngineBasics/Screenshot%202024-03-13%20134729.png)
 # Important Editor Aspects + Common Terminology
 
 # Making basic programming adjustments
